@@ -1,6 +1,7 @@
 // 42. Trapping Rain Water
 
- { 
+    int trap(vector<int>& height)  
+   { 
         int n=height.size();
         int  mxl[n];
         int  mxr[n];
