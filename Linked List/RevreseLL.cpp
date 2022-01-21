@@ -15,3 +15,16 @@ ListNode* reverseList(ListNode* head)
         return tempHead;
         
 }
+
+
+ListNode* current=head;
+ListNode* prev=NULL;
+ListNode* next=NULL;
+while(current!=NULL)
+{
+    next=current->next;
+    current->next=prev;
+    prev=current;
+    current=next;
+}
+head=prev;
