@@ -21,9 +21,10 @@ ListNode* current=head;
 ListNode* prev=NULL;
 ListNode* next=NULL;
 while(current!=NULL)
-{
+{    // Store next
     next=current->next;
     current->next=prev;
+    // Move pointers one position ahead.
     prev=current;
     current=next;
 }
